@@ -1,0 +1,229 @@
+/* google font link  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* heading section  */
+h1 {
+  text-align: center;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+/* robot color  */
+.head,
+.left-arm,
+.torso,
+.right-arm,
+.left-leg,
+.right-leg {
+  background-color: rgb(10, 243, 22);
+}
+/* head section   */
+.head {
+  height: 150px;
+  width: 200px;
+  border-radius: 150px 150px 0 0;
+}
+/* eyes section  */
+.eyes {
+  position: relative;
+  top: 50px;
+}
+.left-eyes {
+  margin-left: 30px;
+}
+.right-eyes {
+  margin-left: 90px;
+}
+.left-eyes,
+.right-eyes {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  display: inline-block;
+}
+/* upper body  */
+.upper-body {
+  width: 300px;
+  height: 150px;
+  display: flex;
+}
+.torso {
+  width: 200px;
+  height: 200px;
+  border-radius: 0 0 50px 50px;
+}
+.left-arm,
+.right-arm {
+  width: 40px;
+  height: 125px;
+  border-radius: 100px;
+  margin-top: 20px;
+}
+.left-arm {
+  margin-right: 10px;
+}
+.right-arm {
+  margin-left: 10px;
+}
+/* lower body  */
+.lower-body {
+  width: 200px;
+  height: 200px;
+}
+.left-leg,
+.right-leg {
+  width: 40px;
+  height: 120px;
+  border-radius: 0 0 100px 100px;
+  display: inline-block;
+}
+.left-leg {
+  margin-left: 45px;
+}
+.right-leg {
+  margin-left: 30px;
+}
+/* animation */
+/* head animatio  */
+.robot:hover .head {
+  animation: movehead 2s infinite;
+}
+@keyframes movehead {
+  0% {
+    width: 200px;
+  }
+  25% {
+    width: 300px;
+  }
+  50% {
+    width: 200px;
+  }
+  75% {
+    width: 300px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+/* arm animatio  */
+.robot:hover .left-arm {
+  animation: moveleftarm 2s infinite;
+}
+@keyframes moveleftarm {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+  25% {
+    transform: rotate(90deg);
+    transform-origin: top center;
+  }
+  50% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+  75% {
+    transform: rotate(90deg);
+    transform-origin: top center;
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+}
+/* right-arm animatio  */
+.robot:hover .right-arm {
+  animation: moverightarm 2s infinite;
+}
+@keyframes moverightarm {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+  25% {
+    transform: rotate(-90deg);
+    transform-origin: top center;
+  }
+  50% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+  75% {
+    transform: rotate(-90deg);
+    transform-origin: top center;
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+}
+/* body torso  */
+.robot:hover .torso {
+  animation: movetorso 5s infinite;
+}
+@keyframes movetorso {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(160deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(75deg);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+/* leg  */
+.robot:hover .left-leg {
+  animation: moveleftleg 2s infinite;
+}
+@keyframes moveleftleg {
+  0% {
+    transform: flip(0deg);
+  }
+  25% {
+    transform: flip(30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.robot:hover .right-leg {
+  animation: moverightleg 2s infinite;
+}
+@keyframes moverightleg {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
